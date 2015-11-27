@@ -269,7 +269,7 @@
 
 
     // 判断加载模块
-    if (typeof define === "function") { >>> >>> > Stashed changes
+    if (typeof define === "function") {
         define(function() {
             return TOOL;
         });
