@@ -1,5 +1,5 @@
 # tool-js
-javascript common base function
+javascript tool function
 
 ### 函数列表
 ``` javascript
