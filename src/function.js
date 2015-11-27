@@ -1,8 +1,8 @@
 /*******************************
  *
- *	date 	@2015/11/27
- * 	author 	@baiyang
- *  desc 	@tools function
+ * date 	@2015/11/27
+ * author 	@baiyang
+ * desc 	@tools function
  *
  * ******************************/
 
