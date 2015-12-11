@@ -264,6 +264,43 @@
 
     };
 
+
+    // 设置永久性本地存储
+    TOOL.set_localstorage = function(name,value) {
+
+        if (window.localStorage) {
+            localStorage.setItem(name,value);
+        }
+
+    };
+
+    // 获取永久本地存储
+    TOOL.get_localstorage = function(name) {
+
+        if (window.localStorage) {
+            return localStorage.getItem(name);
+        }
+
+    };
+
+    // 删除指定的永久本地存储
+    TOOL.del_localstorage = function(name) {
+
+        if (window.localStorage) {
+            localStorage.removeItem(name);
+        }
+
+    };
+
+    // 清空所有的永久本地存储
+    TOOL.clear_localstorage =  function() {
+
+        if (window.localStorage) {
+            localStorage.clear();
+        }
+
+    };
+
     // 设置为全局对象
     window.TOOL = TOOL;
 
