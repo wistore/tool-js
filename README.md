@@ -1,6 +1,5 @@
 # tool-js
-javascript tool function
-本函数包不依赖任何框架，完全采用原生js实现，可以放心使用，总大小为9kb，压缩后为4kb,非常适合手机端使用。
+本工具不依赖任何框架，完全采用原生js实现，可以放心使用，总大小为9kb，压缩后为4kb,非常适合手机端使用。
 
 ### 函数列表
 ``` javascript
@@ -27,5 +26,9 @@ TOOL.is_android_mobile_device ＃判断是否为安卓移动设备
 TOOL.set_cookie  ＃设置cookie
 TOOL.get_cookie  ＃读取cookie
 TOOL.del_cookie  ＃删除cookie
+TOOL.set_localstorage  #设置永久性本地存储
+TOOL.get_localstorage  #获取永久本地存储
+TOOL.del_localstorage  #删除指定的永久本地存储
+TOOL.clear_localstorage  #清空所有的永久本地存储
 
 ```
