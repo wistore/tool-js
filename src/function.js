@@ -1,8 +1,8 @@
 /*******************************
  *
  * date 	@2015/11/27
- * author 	@baiyang
- * desc 	@tools function
+ * author 	@Jack Fan
+ * desc 	@tools func 本工具函数包不依赖任何框架，采用原生javascript实现
  *
  * ******************************/
 
@@ -78,13 +78,31 @@
     // 弹窗提示并且3秒后提示自动消失
     // msg：提示内容
     // cls: 绑定显示面板的class
-    TOOL.alert_tips = function(msg, cls) {
+    TOOL.alert_tips = function(msg, id) {
 
-        $(cls).html(msg).show();
+        TOOL.get_dom(id).html(msg);
+        document.getElementById(id).style.display = '';
         setTimeout(function() {
-            $(cls).html("").hide();
+            TOOL.get_dom(id).html('');
+            document.getElementById(id).style.display = 'none';
         }, 3000);
 
+    };
+
+    // 获取dom节点并给对应的节点添加html方法
+    TOOL.get_dom = function(id){
+
+        var dom = document.getElementById(id);
+        var result = {
+            html:function(str){
+                if(typeof str == 'string') {
+                    dom.innerHTML = str;
+                    return str;
+                } else 
+                    return dom.innerHTML;
+            }
+        }
+        return result;
     };
 
     // 移除含有html标签的字符串里的html

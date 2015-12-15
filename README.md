@@ -1,5 +1,6 @@
 # tool-js
 javascript tool function
+本函数包不依赖任何框架，完全采用原生js实现，可以放心使用，总大小为9kb，压缩后为4kb,非常适合手机端使用。
 
 ### 函数列表
 ``` javascript
