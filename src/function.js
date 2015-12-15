@@ -77,7 +77,7 @@
 
     // 弹窗提示并且3秒后提示自动消失
     // msg：提示内容
-    // cls: 绑定显示面板的class
+    // id: 绑定显示面板的id
     TOOL.alert_tips = function(msg, id) {
 
         TOOL.get_dom(id).html(msg);
@@ -98,7 +98,7 @@
                 if(typeof str == 'string') {
                     dom.innerHTML = str;
                     return str;
-                } else 
+                } else
                     return dom.innerHTML;
             }
         }
@@ -170,7 +170,7 @@
     };
 
     // 根据参数名获取当前url的参数值
-    // 例如：xxx.html?a=10&id=8   
+    // 例如：xxx.html?a=10&id=8
     // 执行：TOOL.get_param(id) 可得到值8
     TOOL.get_param = function(id) {
 
